@@ -1,4 +1,3 @@
-
 # Documentación del Sistema de Applicant-Tracking System (ATS) de LTI
 
 ## Índice
@@ -125,13 +124,14 @@ LTI ATS es una plataforma diseñada para revolucionar el proceso de reclutamient
 
 **Diagrama de Caso de Uso**:
 ```mermaid
-usecaseDiagram
+@startuml
 actor Recruiter as "Recruiter"
 actor System as "System"
 actor Candidate as "Candidate"
 Recruiter -- (Classify CVs)
 System -- (Recommend Candidate)
 Candidate -- (Submit CV)
+@enduml
 ```
 
 ### Caso de Uso 2: Evaluación Automatizada de Candidatos
@@ -139,11 +139,12 @@ Candidate -- (Submit CV)
 
 **Diagrama de Caso de Uso**:
 ```mermaid
-usecaseDiagram
+@startuml
 actor Recruiter as "Recruiter"
 actor System as "System"
 Recruiter -- (Evaluate Candidate)
 System -- (Generate Evaluation Report)
+@enduml
 ```
 
 ### Caso de Uso 3: Chat en Vivo entre Reclutadores y Managers
@@ -151,13 +152,14 @@ System -- (Generate Evaluation Report)
 
 **Diagrama de Caso de Uso**:
 ```mermaid
-usecaseDiagram
+@startuml
 actor Recruiter as "Recruiter"
 actor HiringManager as "Hiring Manager"
 actor System as "System"
 Recruiter -- (Initiate Chat)
 HiringManager -- (Respond to Chat)
 System -- (Provide Chat Interface)
+@enduml
 ```
 
 ---
